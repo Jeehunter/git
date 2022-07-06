@@ -7,7 +7,7 @@ i -> 第一次修改，第二个commit提示 前面的pick改为s -> Esc -> :wq
 i -> 第二次修改，不需要显示的commit提示 前面的pick前面加#,注释掉 -> Esc -> :wq
 git commit --amend
 git commit --amend --author="xx <xx@cc.com>"
-## git commit --amend --author="drunk <000000@qq.com>"
+## git commit --amend --author="@qq.com>"
 // 修改最后一次commit提交的信息
 git commit --amend --message="message"
 
