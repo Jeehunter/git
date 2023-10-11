@@ -2,7 +2,9 @@
 ## Git放弃本地修改，用远程分支覆盖本地分支
 
 git fetch --all
+
 git reset --hard origin/master (这里master为对应的分支名)
+
 git pull
 
 
