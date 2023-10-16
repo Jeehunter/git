@@ -1,4 +1,4 @@
-
+![image](https://github.com/Jeehunter/git/assets/20501781/41275d98-2d23-4eb0-9faf-57f84eddad37)
 ## Git放弃本地修改，用远程分支覆盖本地分支
 
 git fetch --all
@@ -118,3 +118,8 @@ git pull --rebase origin master
 使用git reset --hard commit_id命令，进行版本回退
 git push -f
 ```
+
+
+### linux sha256
+sha256sum guodongsun.vscode-git-cruise-0.2.4.carts > guodongsun.vscode-git-cruise-0.2.4.carts.sha256
+
