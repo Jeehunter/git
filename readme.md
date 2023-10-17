@@ -1,4 +1,4 @@
-![image](https://github.com/Jeehunter/git/assets/20501781/41275d98-2d23-4eb0-9faf-57f84eddad37)
+
 ## Git放弃本地修改，用远程分支覆盖本地分支
 
 git fetch --all
