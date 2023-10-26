@@ -123,3 +123,30 @@ git push -f
 ### linux sha256
 sha256sum guodongsun.vscode-git-cruise-0.2.4.carts > guodongsun.vscode-git-cruise-0.2.4.carts.sha256
 
+
+
+### 大文件
+ 如果你在合并过程中遇到二进制文件冲突，你可以选择保留当前分支版本的文件，放弃其他分支的更改。具体操作如下：
+
+首先，你需要找到冲突的二进制文件。你可以通过运行 git status 命令来查看哪些文件有冲突。
+
+然后，你可以使用 git checkout --ours <file> 命令来保留当前分支版本的文件。其中 <file> 是你要保留的文件的路径。例如，如果你的文件路径是 src/image.png，你可以运行 git checkout --ours src/image.png。
+
+最后，你需要将这个文件添加到暂存区，并提交。你可以使用 git add <file> 和 git commit -m "Resolve binary conflict" 命令来完成这个操作。其中 <file> 是你刚刚保留的文件的路径。
+
+注意：在解决冲突后，你应该运行 git push 命令将你的更改推送到远程仓库。
+
+
+git lfs用法
+
+git lfs track 二进制文件名
+
+git add .
+
+git lfs ls-files -s 查看是否追踪成功
+
+git commit -m "提交信息"
+
+git lfs ls-files 查看是否追踪成功
+
+git push
